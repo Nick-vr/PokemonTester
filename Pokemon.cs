@@ -122,14 +122,14 @@ namespace PokemonTester
         /*Constructor*/
 
         public Pokemon(
-                        string name,
-                        int startLevel,
                         int hp_Base,
                         int attack_Base,
                         int defense_Base,
                         int specialAttack_Base,
                         int specialDefense_Base,
-                        int speed_Base)
+                        int speed_Base,
+                        string name = "pokeName",
+                        int startLevel = 1)
         {
             Name = name;
             Level = startLevel;
@@ -139,10 +139,6 @@ namespace PokemonTester
             SpecialAttack_Base = specialAttack_Base;
             SpecialDefense_Base = specialDefense_Base;
             Speed_Base = speed_Base;
-        }
-
-        public Pokemon()
-        {
         }
 
         /*Methods*/
